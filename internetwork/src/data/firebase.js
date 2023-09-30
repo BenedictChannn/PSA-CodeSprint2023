@@ -20,12 +20,12 @@ import "firebase/firestore";
 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCi0nWW_ksUwL8I2VwSIty2GGi3BGcrKtw",
-    authDomain: "nuswhere-e219d.firebaseapp.com",
-    projectId: "nuswhere-e219d",
-    storageBucket: "nuswhere-e219d.appspot.com",
-    messagingSenderId: "827689257762",
-    appId: "1:827689257762:web:4649238c67db99c7b8f37b"
+    apiKey: "AIzaSyCp-srUar1Fi1kFa2y5spWfmmeUR96vDI4",
+    authDomain: "internetwork-1b655.firebaseapp.com",
+    projectId: "internetwork-1b655",
+    storageBucket: "internetwork-1b655.appspot.com",
+    messagingSenderId: "885397702643",
+    appId: "1:885397702643:web:ab9a5dcad6982c0cebf486"
 };
 
 // Initialize Firebase
