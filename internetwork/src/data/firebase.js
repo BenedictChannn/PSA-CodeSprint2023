@@ -4,6 +4,7 @@ import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
 // Required for side-effects
 import "firebase/firestore";
+import { API_KEY } from './keys';
 // import { 
 //     getFirestore, 
 //     collection, 
@@ -20,7 +21,7 @@ import "firebase/firestore";
 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCp-srUar1Fi1kFa2y5spWfmmeUR96vDI4",
+    apiKey: API_KEY,
     authDomain: "internetwork-1b655.firebaseapp.com",
     projectId: "internetwork-1b655",
     storageBucket: "internetwork-1b655.appspot.com",
