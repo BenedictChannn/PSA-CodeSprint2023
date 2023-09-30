@@ -4,6 +4,8 @@ import Landing from './pages/Landing/Landing';
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './pages/Home/Home';
+import { Profile } from './pages/Profile/Profile';
+
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
         <Route path="/" element={<Landing />} />
         <Route path="home" element={<Home />} />
         <Route path="login" element={<Login />} />
+        <Route path="profile" element={<Profile />}/>
+
       </Routes>
     </BrowserRouter>
   );

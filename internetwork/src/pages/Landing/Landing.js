@@ -25,13 +25,14 @@ function Landing() {
 
       <div className='buttoncont'>
         <Link to="/login">
-          <button className='button'>
+          <button className='goToLoginButton'>
+
             LOGIN
           </button>
         </Link>
       </div>
 
-      <div className='image'>
+      <div className='landingImage'>
         <img src='../../../assets/images/homepage1.png' alt='' />
       </div>
     </div>

@@ -1,0 +1,18 @@
+.button {
+    font-family: 'Garet-Book', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: yellow;
+    background-color: black;
+    border-color: yellow;
+    border-width: 3px;
+    font-size: 100%; /* Adjust the font size as needed */
+    padding: 8px 65px; /* Adjust the padding values as needed (top and bottom, left and right) */
+}
+
+.buttonCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+}

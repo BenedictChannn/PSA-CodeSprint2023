@@ -1,8 +1,27 @@
 import InputBox from '../../components/InputBox'
 import { useState } from 'react';
 import { auth } from '../../data/firebase';
-import { FirebaseError } from '../../error/FirebaseError'
+import './Login.css'
+import { Link, useNavigate } from 'react-router-dom';
 
+function firebaseError(errorResponse) {
+  switch (errorResponse.code) {
+      case 'auth/user-not-found':
+          return 'This email is not registered. Please proceed to register an account.';
+      case 'auth/wrong-password':
+          return 'Incorrect password entered. Please try again.';
+      case 'auth/too-many-requests': // when user keeps clicking on the login/register buttons, can get disabled.
+          return 'Authentication failed multiple times and account is disabled. Please proceed to register a new account.';
+      case 'auth/email-already-in-use':
+          return 'This email is already registered. You can proceed to login or register using another account.'
+      case 'auth/invalid-login-credentials':
+          return 'Your email or username is incorrect. Please try again'
+      case 'auth/invalid-email':
+          return '';
+      default:
+          return '';
+  }
+}
 
 export default function Login() {
   const [email, setEmail] = useState('')
@@ -10,12 +29,13 @@ export default function Login() {
   const [passwordErrorMsg, setPasswordErrorMsg] = useState()
   const [emailErrorMsg, setEmailErrorMsg] = useState('')
   const [errorMsg, setErrorMsg] = useState('')
-  const [success, setSuccess] = useState('')
+  const navigate = useNavigate()
 
 
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setErrorMsg('');
     setEmailErrorMsg('')
     setPasswordErrorMsg('');
 
@@ -23,17 +43,19 @@ export default function Login() {
 
   
   
-    if (email.length == 0) {
+    if (email.length === 0) {
       setEmailErrorMsg("email is required field");
     } else {
       const isValid = validator.isEmail(email);
       if (!isValid) {
         setEmailErrorMsg("Wrong email format");
+        return;
       }
     } 
     
-    if (password.length == 0) {
+    if (password.length === 0) {
       setPasswordErrorMsg("Password is required field");
+      return;
     }
   
     auth
@@ -41,15 +63,18 @@ export default function Login() {
       .then(userCredentials => {
         const user = userCredentials.user;
         console.log('Logged in with:', user.email);
-        setSuccess("Success")
+        navigate('/home')
+
       })
       .catch(error => {
-        setErrorMsg(FirebaseError(error));
-        setSuccess("Error")
+        console.error("Firebase Authentication Error:", error);
+        setErrorMsg(firebaseError(error));
       })
-  
-      setEmail('');
-      setPassword('');
+
+      setEmail('')
+      setPassword('')
+
+
     
   }
 
@@ -63,17 +88,30 @@ export default function Login() {
 
   return (
     <div className='loginDiv'>
-      <form onSubmit={handleSubmit}>
+      <div className='logo'>
+        <img src='../../../assets/images/logo.png'/>
+      </div>
+      <form>
 
         <InputBox placeholder="EMAIL" value={email} setValue={handleEmail}/>
-        {emailErrorMsg !== "" && <label className='errorMessage'>{emailErrorMsg}</label>}
+        {emailErrorMsg !== "" && <label className='errorMsg'>{emailErrorMsg}</label>}
         <InputBox placeholder="PASSWORD" type="password" value={password} setValue={handlePassword}/>
-        {passwordErrorMsg !== "" && <label className='errorMessage'>{passwordErrorMsg}</label>}
-        <button className='button' type='submit'>LOGIN</button>
+        {passwordErrorMsg !== "" && <label className='errorMsg'>{passwordErrorMsg}</label>}
+        <p className='forgotPassword'>Forgot your password? <span>Click here</span></p>
+
+        <div className='loginButtonContainer'>
+          <button className='loginButton' onClick={handleSubmit}>
+            LOGIN
+          </button>
+        </div>
 
       </form>
-      {errorMsg !== "" && <label>{errorMsg}</label>}
-      {success !== "" && <label>{success}</label>}
+
+      {errorMsg !== "" && <p className='errorMsg'>{errorMsg}</p>}
+
+      <div className='loginImage'>
+        <img src='../../../assets/images/login.png' alt=''/>
+      </div>
     </div>
   )
 }

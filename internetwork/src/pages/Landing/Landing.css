@@ -43,7 +43,7 @@
     padding-right: 5%;
 }
 
-.image {
+.landingImage {
     display: flex;
     flex: 1;
     justify-content: center;
@@ -51,7 +51,7 @@
     
 }
 
-.image img {
+.landingImage img {
     width: 60%;
 }
 
@@ -69,7 +69,7 @@
     background-color: black;
 }
 
-.button {
+.goToLoginButton {
     font-family: 'Garet-Book', sans-serif;
     font-weight: bold;
     text-align: center;
