@@ -1,5 +1,6 @@
 import React from 'react'
 import './Landing.css'
+import { Link } from 'react-router-dom'
 
 function Landing() {
   return (
@@ -23,13 +24,15 @@ function Landing() {
       </div>
 
       <div className='buttoncont'>
-        <button className='button'>
-          LOGIN
-        </button>
+        <Link to="/login">
+          <button className='button'>
+            LOGIN
+          </button>
+        </Link>
       </div>
 
       <div className='image'>
-        <img src='../../../assets/images/homepage1.png' alt=''/>
+        <img src='../../../assets/images/homepage1.png' alt='' />
       </div>
     </div>
   )

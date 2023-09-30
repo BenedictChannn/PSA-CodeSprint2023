@@ -1,0 +1,99 @@
+/* styles.css or App.css */
+@font-face {
+    font-family: 'Garet-Book';
+    src: url('../../assets/fonts/garet-cufonfonts/Garet-Book.otf') format('opentype');
+    /* Add more src lines for different font file formats if necessary */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PPTelegraf-Regular';
+    src: url('../../assets/fonts/PPTelegraf-Free/PPTelegraf-Regular.otf') format('opentype');
+    /* Add more src lines for different font file formats if necessary */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PPTelegraf-UltraLight';
+    src: url('../../assets/fonts/PPTelegraf-Free/PPTelegraf-UltraLight.otf') format('opentype');
+    /* Add more src lines for different font file formats if necessary */
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Apply the font to a CSS class or element */
+.text {
+    font-family: 'Garet-Book', sans-serif;
+    text-align: center;
+    color: white;
+    margin: 0;
+    font-size: 100%; /* Added 'px' unit */
+    padding-left: 35%;
+    padding-right: 35%;
+}
+
+.header {
+    font-family: 'PPTelegraf-UltraLight', sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 100%; /* Adjusted font size with 'px' unit */
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.header2 {
+    font-family: 'PPTelegraf-UltraLight', sans-serif;
+    text-align: center;
+    color: yellow;
+    font-size: 100%; /* Adjusted font size with 'px' unit */
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.headercont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+}
+
+.image {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    
+}
+
+.image img {
+    width: 60%;
+}
+
+.icon {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    font-family: 'Garet-Book', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: yellow;
+    background-color: black;
+    border-color: yellow;
+    border-width: 3px;
+    font-size: 100%; /* Adjust the font size as needed */
+    padding: 8px 65px; /* Adjust the padding values as needed (top and bottom, left and right) */
+}
+
+.buttoncont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+}
