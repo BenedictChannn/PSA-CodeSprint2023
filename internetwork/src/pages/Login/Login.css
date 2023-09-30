@@ -2,7 +2,15 @@
 
 @font-face {
     font-family: 'Garet-Book';
-    src: url('../assets/fonts/garet-cufonfonts/Garet-Book.otf') format('opentype');
+    src: url('../../assets/fonts/garet-cufonfonts/Garet-Book.otf') format('opentype');
+    /* Add more src lines for different font file formats if necessary */
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Garet-Heavy';
+    src: url('../../assets/fonts/garet-cufonfonts/Garet-Heavy.otf') format('opentype');
     /* Add more src lines for different font file formats if necessary */
     font-weight: normal;
     font-style: normal;
@@ -10,7 +18,7 @@
 
 @font-face {
     font-family: 'PPTelegraf-Regular';
-    src: url('../assets/fonts/PPTelegraf-Free/PPTelegraf-Regular.otf') format('opentype');
+    src: url('../../assets/fonts/PPTelegraf-Free/PPTelegraf-Regular.otf') format('opentype');
     /* Add more src lines for different font file formats if necessary */
     font-weight: normal;
     font-style: normal;
@@ -18,37 +26,62 @@
 
 @font-face {
     font-family: 'PPTelegraf-UltraLight';
-    src: url('../assets/fonts/PPTelegraf-Free/PPTelegraf-UltraLight.otf') format('opentype');
+    src: url('../../assets/fonts/PPTelegraf-Free/PPTelegraf-UltraLight.otf') format('opentype');
     /* Add more src lines for different font file formats if necessary */
     font-weight: normal;
     font-style: normal;
 }
 
-.errorMessage {
-    color: yellow;
-    font-family: 'PPTele';
+.errorMsg {
+    color: white;
+    font-family: 'PPTelegraf-UltraLight', sans-serif;
+    justify-self: center;   
+    margin: 10px 
 }
 
-.form {
+.loginDiv {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
-
-
-
-.loginDiv div {
+.buttonContainer {
     display: flex;
     justify-content: center;
+    margin: 20px
 }
 
 .loginDiv button {
-    font-family: 'Garet-Book', sans-serif;
-    font-weight: bold;
+    font-family: 'Garet-Heavy', sans-serif;
     text-align: center;
     border-color: yellow;
     border-width: 2px;
-    font-size: 100%; /* Adjust the font size as needed */
+    font-size: 120%; /* Adjust the font size as needed */
     padding: 8px 65px; /* Adjust the padding values as needed (top and bottom, left and right) */
+    background-color: yellow;
+    color: black;
+}
+
+.loginDiv .forgotPassword {
+    color: white;
+    font-family: 'PPTelegraf-Regular';
+    text-align: center;
+}
+
+.forgotPassword span {
+    color: yellow;
+}
+
+.loginImage {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    width: 100vw
+    
+}
+
+.loginImage img {
+    width: 100%
 }

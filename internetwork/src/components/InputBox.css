@@ -1,13 +1,45 @@
+
+@font-face {
+    font-family: 'Garet-Book';
+    src: url('../assets/fonts/garet-cufonfonts/Garet-Book.otf') format('opentype');
+    /* Add more src lines for different font file formats if necessary */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PPTelegraf-Regular';
+    src: url('../assets/fonts/PPTelegraf-Free/PPTelegraf-Regular.otf') format('opentype');
+    /* Add more src lines for different font file formats if necessary */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PPTelegraf-UltraLight';
+    src: url('../assets/fonts/PPTelegraf-Free/PPTelegraf-UltraLight.otf') format('opentype');
+    /* Add more src lines for different font file formats if necessary */
+    font-weight: normal;
+    font-style: normal;
+}
+
 .input {
     height: 40px;
-    width: 200px;
-    border-width: 2px;
+    width: 400px;
+    border-width: 2.5px;
     border-color: yellow;
     background-color: black;
+    font-family: 'Garet-Book', sans-serif;
+    font-weight: 100;
+    border-radius: 5px;
 
     margin: 15px 10px;
     color: yellow;
-    padding: 10px
+    padding: 10px;
+}
+
+.input::placeholder {
+    color: yellow;
 }
 
 .container {

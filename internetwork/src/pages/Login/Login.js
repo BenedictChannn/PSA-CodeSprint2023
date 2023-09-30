@@ -2,6 +2,7 @@ import InputBox from '../../components/InputBox'
 import { useState } from 'react';
 import { auth } from '../../data/firebase';
 import { FirebaseError } from '../../error/FirebaseError'
+import './Login.css'
 
 
 export default function Login() {
@@ -10,7 +11,6 @@ export default function Login() {
   const [passwordErrorMsg, setPasswordErrorMsg] = useState()
   const [emailErrorMsg, setEmailErrorMsg] = useState('')
   const [errorMsg, setErrorMsg] = useState('')
-  const [success, setSuccess] = useState('')
 
 
 
@@ -23,7 +23,7 @@ export default function Login() {
 
   
   
-    if (email.length == 0) {
+    if (email.length === 0) {
       setEmailErrorMsg("email is required field");
     } else {
       const isValid = validator.isEmail(email);
@@ -32,7 +32,7 @@ export default function Login() {
       }
     } 
     
-    if (password.length == 0) {
+    if (password.length === 0) {
       setPasswordErrorMsg("Password is required field");
     }
   
@@ -41,11 +41,9 @@ export default function Login() {
       .then(userCredentials => {
         const user = userCredentials.user;
         console.log('Logged in with:', user.email);
-        setSuccess("Success")
       })
       .catch(error => {
         setErrorMsg(FirebaseError(error));
-        setSuccess("Error")
       })
   
       setEmail('');
@@ -63,17 +61,27 @@ export default function Login() {
 
   return (
     <div className='loginDiv'>
+      <div className='logo'>
+        <img src='../../../assets/images/logo.png'/>
+      </div>
       <form onSubmit={handleSubmit}>
 
         <InputBox placeholder="EMAIL" value={email} setValue={handleEmail}/>
-        {emailErrorMsg !== "" && <label className='errorMessage'>{emailErrorMsg}</label>}
+        {emailErrorMsg !== "" && <label className='errorMsg'>{emailErrorMsg}</label>}
         <InputBox placeholder="PASSWORD" type="password" value={password} setValue={handlePassword}/>
-        {passwordErrorMsg !== "" && <label className='errorMessage'>{passwordErrorMsg}</label>}
-        <button className='button' type='submit'>LOGIN</button>
+        {passwordErrorMsg !== "" && <label className='errorMsg'>{passwordErrorMsg}</label>}
+        <p className='forgotPassword'>Forgot your password? <span>Click here</span></p>
+        <div className='buttonContainer'>
+          <button className='button' type='submit'>LOGIN</button>
+        </div>
 
       </form>
-      {errorMsg !== "" && <label>{errorMsg}</label>}
-      {success !== "" && <label>{success}</label>}
+
+      {errorMsg !== "" && <label className='errorMsg'>{errorMsg}</label>}
+
+      <div className='loginImage'>
+        <img src='../../../assets/images/login.png' alt=''/>
+      </div>
     </div>
   )
 }
