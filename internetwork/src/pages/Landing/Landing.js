@@ -4,11 +4,13 @@ import './Landing.css'
 function Landing() {
   return (
     <div className='body'>
+      <div className='logo'>
+        <img src='../../../assets/images/logo.png' alt='' />
+      </div>
+
       <header className="header">
         <h1>
           Your one-stop platform for
-        </h1>
-        <h1>
           talent management
         </h1>
       </header>
@@ -16,8 +18,6 @@ function Landing() {
       <div className="text">
         <p>
           Drive retention, guide skills development, and
-        </p>
-        <p>
           promote from within us
         </p>
       </div>
@@ -29,7 +29,7 @@ function Landing() {
       </div>
 
       <div className='image'>
-        <img src='../../../assets/images/homepage.png' />
+        <img src='../../../assets/images/homepage1.png' alt=''/>
       </div>
     </div>
   )
