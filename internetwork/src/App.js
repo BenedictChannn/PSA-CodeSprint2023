@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from './pages/Login';
+import styles from './App.module.css'
 
 function App() {
   return (

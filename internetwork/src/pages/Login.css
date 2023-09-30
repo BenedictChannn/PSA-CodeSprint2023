@@ -1,1 +1,54 @@
 
+
+@font-face {
+    font-family: 'Garet-Book';
+    src: url('../assets/fonts/garet-cufonfonts/Garet-Book.otf') format('opentype');
+    /* Add more src lines for different font file formats if necessary */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PPTelegraf-Regular';
+    src: url('../assets/fonts/PPTelegraf-Free/PPTelegraf-Regular.otf') format('opentype');
+    /* Add more src lines for different font file formats if necessary */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PPTelegraf-UltraLight';
+    src: url('../assets/fonts/PPTelegraf-Free/PPTelegraf-UltraLight.otf') format('opentype');
+    /* Add more src lines for different font file formats if necessary */
+    font-weight: normal;
+    font-style: normal;
+}
+
+.errorMessage {
+    color: yellow;
+    font-family: 'PPTele';
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.loginDiv div {
+    display: flex;
+    justify-content: center;
+}
+
+.loginDiv button {
+    font-family: 'Garet-Book', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    border-color: yellow;
+    border-width: 2px;
+    font-size: 100%; /* Adjust the font size as needed */
+    padding: 8px 65px; /* Adjust the padding values as needed (top and bottom, left and right) */
+}

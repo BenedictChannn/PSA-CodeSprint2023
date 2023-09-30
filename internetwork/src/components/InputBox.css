@@ -1,11 +1,17 @@
-.container {
-    background-color: 'white';
-    width: '100%';
-        
-    border-color: '#e8e8e8';
-    border-width: 1;
-    border-radius: 18;
+.input {
+    height: 40px;
+    width: 200px;
+    border-width: 2px;
+    border-color: yellow;
+    background-color: black;
 
-    padding: 15 10;
-    margin: 0 5;
+    margin: 15px 10px;
+    color: yellow;
+    padding: 10px
 }
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+

@@ -4,8 +4,6 @@ import { auth } from '../data/firebase';
 import { FirebaseError } from '../error/FirebaseError'
 
 
-
-
 export default function Login() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
@@ -64,18 +62,20 @@ export default function Login() {
   }
 
   return (
-    <main>
+    <div className='loginDiv'>
       <form onSubmit={handleSubmit}>
 
-        <InputBox placeholder="Email" value={email} setValue={handleEmail}/>
-        {emailErrorMsg !== "" && <label>{emailErrorMsg}</label>}
-        <InputBox placeholder="Password" type="password" value={password} setValue={handlePassword}/>
-        {passwordErrorMsg !== "" && <label>{passwordErrorMsg}</label>}
-        <button type='submit'>Login</button>
+        <InputBox placeholder="EMAIL" value={email} setValue={handleEmail}/>
+        {emailErrorMsg !== "" && <label className='errorMessage'>{emailErrorMsg}</label>}
+        <InputBox placeholder="PASSWORD" type="password" value={password} setValue={handlePassword}/>
+        {passwordErrorMsg !== "" && <label className='errorMessage'>{passwordErrorMsg}</label>}
+        <div className='buttonContainer'>
+          <button className='button' type='submit'>LOGIN</button>
+        </div> 
 
       </form>
       {errorMsg !== "" && <label>{errorMsg}</label>}
       {success !== "" && <label>{success}</label>}
-    </main>
+    </div>
   )
 }
