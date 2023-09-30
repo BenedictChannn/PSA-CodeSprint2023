@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'Garet-Book';
+    src: url('../../assets/fonts/garet-cufonfonts/Garet-Book.otf') format('opentype');
+    /* Add more src lines for different font file formats if necessary */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PPTelegraf-Regular';
+    src: url('../../assets/fonts/PPTelegraf-Free/PPTelegraf-Regular.otf') format('opentype');
+    /* Add more src lines for different font file formats if necessary */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PPTelegraf-UltraLight';
+    src: url('../../assets/fonts/PPTelegraf-Free/PPTelegraf-UltraLight.otf') format('opentype');
+    /* Add more src lines for different font file formats if necessary */
+    font-weight: normal;
+    font-style: normal;
+}
+
+.topLeftLogo {
+    display: flex;
+    flex: 1;
+    justify-content: left;
+    align-items: center;
+}
+
+.topLeftLogo img {
+    width: 14%
+}
+
+.profileHeading {
+    color: yellow;
+    font-family: 'Garet-Book', sans-serif;
+}
+
+.profileDescription {
+    color: white;
+    font-family: 'Garet-Book', sans-serif;
+}
+
+.profileMainContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+

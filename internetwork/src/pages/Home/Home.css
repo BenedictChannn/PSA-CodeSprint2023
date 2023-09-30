@@ -38,38 +38,48 @@
     font-family: 'PPTelegraf-UltraLight', sans-serif;
     text-align: center;
     color: white;
-    font-size: 300%; /* Adjusted font size with 'px' unit */
+    font-size: 100%; /* Adjusted font size with 'px' unit */
     padding-left: 5%;
     padding-right: 5%;
 }
 
-.landingImage {
+.header2 {
+    font-family: 'PPTelegraf-UltraLight', sans-serif;
+    text-align: center;
+    color: yellow;
+    font-size: 100%; /* Adjusted font size with 'px' unit */
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.headercont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+}
+
+.image {
     display: flex;
     flex: 1;
     justify-content: center;
     align-items: center;
+    height: 200px;
+    width: 200px;
     
 }
 
-.landingImage img {
+.image img {
     width: 60%;
 }
 
-.logo {
-    display: flex;
+.icon {
+    flex: 1;
     justify-content: center;
     align-items: center;
 }
 
-.logo img {
-    width: 15%;
-}
-
-.body {
-    background-color: black;
-}
-
-.goToLoginButton {
+.button {
     font-family: 'Garet-Book', sans-serif;
     font-weight: bold;
     text-align: center;
