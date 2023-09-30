@@ -1,7 +1,7 @@
-import InputBox from '../components/InputBox'
+import InputBox from '../../components/InputBox'
 import { useState } from 'react';
-import { auth } from '../data/firebase';
-import { FirebaseError } from '../error/FirebaseError'
+import { auth } from '../../data/firebase';
+import { FirebaseError } from '../../error/FirebaseError'
 
 
 export default function Login() {
@@ -69,9 +69,7 @@ export default function Login() {
         {emailErrorMsg !== "" && <label className='errorMessage'>{emailErrorMsg}</label>}
         <InputBox placeholder="PASSWORD" type="password" value={password} setValue={handlePassword}/>
         {passwordErrorMsg !== "" && <label className='errorMessage'>{passwordErrorMsg}</label>}
-        <div className='buttonContainer'>
-          <button className='button' type='submit'>LOGIN</button>
-        </div> 
+        <button className='button' type='submit'>LOGIN</button>
 
       </form>
       {errorMsg !== "" && <label>{errorMsg}</label>}
