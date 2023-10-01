@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import { Button } from '../../components/Button'
 import { auth, fetchUserProfile } from '../../data/firebase'
 import './Profile.css'
 
 export function Profile() {
-    const user = auth.currentUser
+    const user = auth.currentUser.uid;
     const [userDetails, setUserDetails] = useState(null);
 
 
@@ -13,7 +13,7 @@ export function Profile() {
     useEffect(() => {
         async function fetchUserDetails() {
             try {
-                const userData = await fetchUserProfile("test");
+                const userData = await fetchUserProfile(user);
                 setUserDetails(userData);
                 console.log(userData);
             } catch (error) {
@@ -48,7 +48,8 @@ export function Profile() {
             <header className='header'>
                 <Link to="/home">
                     <div className='topLeftLogo'>
-                    <img src='../../../assets/images/logo.png' alt=''/>
+
+                        <img src='../../../assets/images/logo.png' alt=''/>
                     </div>
                 </Link>
                 <h1>View Profile</h1> 
@@ -63,13 +64,13 @@ export function Profile() {
                 <p className='profileDescription'>{department}</p>
 
                 <h3 className='profileHeading'>Skills</h3>
-                <p className='profileDescription'>{skills}</p>
+                <p className='profileDescription'>{skills.join(", ")}</p>
                 
                 <h3 className='profileHeading'>Projects</h3>
                 <p className='profileDescription'>projects A</p>
 
                 <h3 className='profileHeading'>Prior Experiences</h3>
-                <p className='profileDescription'>{priorExp}</p>
+                <p className='profileDescription'>{priorExp.join(", ")}</p>
 
             </div>
 

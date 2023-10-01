@@ -1,9 +1,11 @@
 import React from 'react'
 import { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import './FindWorkers.css';
 import InputBox from '../../components/InputBox'
 import Sidebar from '../../components/Sidebar/Sidebar';
+import { sendFindRequest } from '../../data/firebase';
+import { call } from '../../data/call';
 
 
 
@@ -14,26 +16,12 @@ function FindWorkers() {
     const [name, setName] = useState('')
     const [skill, setSkill] = useState('')
     const navigate = useNavigate()
+    const [searchParams, setSearchParams] = useSearchParams()
 
 
-    const handleDepartmentChange = (event) => {
-        setSelectedDepartment(event.target.value); // Update selected option when changed
-    };
-    const handleProjectChange = (event) => {
-        setSelectedProject(event.target.value); // Update selected option when changed
-    };
 
-    const handleName = (event) => {
-        setName(event.target.value)
-    }
 
-    const handleSkill = (event) => {
-        setSkill(event.target.value)
-    }
 
-    const handleFind = (e) => {
-        navigate('/findworkersresults')
-    }
 
     return (
         <div className='findcontainer'>
@@ -57,12 +45,12 @@ function FindWorkers() {
                     </h1>
                 </header>
                 <div>
-                    <InputBox placeholder="NAME" value={name} setValue={handleName} />
+                    <InputBox placeholder="NAME" value={name} setValue={setName} />
                 </div>
                 <div>
                     <select
                         value={selectedDepartment}
-                        onChange={handleDepartmentChange}
+                        onChange={setSelectedDepartment}
                         className='inputf'
                     >
                         <option value="">DEPARTMENT</option>
@@ -75,7 +63,7 @@ function FindWorkers() {
                 <div>
                     <select
                         value={selectedProject}
-                        onChange={handleProjectChange}
+                        onChange={setSelectedProject}
                         className='inputf'
                     >
                         <option value="">PROJECT</option>
@@ -84,13 +72,16 @@ function FindWorkers() {
                     </select>
                 </div>
                 <div>
-                    <InputBox placeholder="SKILLS" value={skill} setValue={handleSkill} />
+                    <InputBox placeholder="SKILLS" value={skill} setValue={setSkill} />
                 </div>
-                <div className='findbuttcont'>
-                    <button className='findButton' onClick={handleFind}>
-                        FIND
-                    </button>
-                </div>
+                <Link to={`/findworkersresults/${name}`}>
+                    <div className='findbuttcont'>
+                        <button className='findButton'>
+                            FIND
+                        </button>
+                    </div>
+                </Link>
+                
             </div>
         </div>
     )

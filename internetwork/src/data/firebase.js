@@ -3,7 +3,7 @@ import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
 import { getFirestore, setDoc, doc, getDoc, collection, addDoc, query, where, getDocs } from 'firebase/firestore';
-
+import axios from 'axios';
 
 const usersData = require('../data/users.json');
 
@@ -57,6 +57,39 @@ async function getProfileDetails(uid) {
     }
 }
 
+async function sendFindRequest(name) {
+    const q = query(
+        collection(db, 'users'),
+        where('name', '==', name)
+    );
+
+    try {
+        const querySnapshot = await getDocs(q);
+        let data = []
+        querySnapshot.forEach((doc) => {
+            data.push(doc.data())
+        });
+        var dataToSend = data[0];
+        console.log(dataToSend)
+
+        // Make a POST request to the Python server
+        axios.post('http://localhost:5001/run_sbert', dataToSend)
+        .then(response => {
+            console.log(response.data);
+            // Handle the response from the server
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            // Handle any errors
+});
+    } catch (error) {
+        console.log(error);
+        throw error;
+    }
+
+
+}
+
 
 async function fetchUserProfile(uid) {
     try {
@@ -68,7 +101,6 @@ async function fetchUserProfile(uid) {
     }
 }
 
-fetchUserProfile("test")
 
 //ONLY RUN ONCE -- to load json to firebase
 async function loadUserData() {
@@ -85,4 +117,4 @@ async function loadUserData() {
 }
 
 
-export { auth, editProfileDetails, fetchUserProfile }; 
+export { auth, editProfileDetails, fetchUserProfile, sendFindRequest }; 
