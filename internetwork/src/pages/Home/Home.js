@@ -1,13 +1,15 @@
-import React from 'react'
-import './Home.css'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import './Home.css';
+import { Link } from 'react-router-dom';
 
+function Home({ userRole }) {
+  // Check if the user is an HR official
+  const isHROfficial = userRole === 'HR Official';
 
-function Home() {
   return (
     <div>
       <div className='headercont'>
-        <header className="header">
+        <header className="homeheader">
           <h1>
             Welcome to InterNetWork!
           </h1>
@@ -16,23 +18,39 @@ function Home() {
           </h1>
         </header>
       </div>
-    
-      <div className='icon'>
-        <img className='image' src='../../../assets/images/profile.png' alt='' />
-        <h1 className='header'>Personal Profile</h1>
-        <p className='text'>View and Edit your personal professional profile</p>
+
+      <div className='homeiconcont'>
+        <div className='iconhome'>
+          <img className='imagehome' src='../../../assets/images/profile.png' alt='' />
+          <h1 className='homeheader2'>Personal Profile</h1>
+          <p className='hometext'>View and Edit your personal professional profile</p>
+        </div>
+
+        <div className='iconhome'>
+          <img className='imagehome' src='../../../assets/images/upskill.png' alt='' />
+          <h1 className='homeheader2'>Upskill</h1>
+          <p className='hometext'>Boost your skills and knowledge with PSA Institute.</p>
+        </div>
+
+        {/* Conditional rendering for HR Official */}
+        {isHROfficial && (
+          <div className='iconhome'>
+            <img className='imagehome' src='../../../assets/images/find.png' alt='' />
+            <h1 className='homeheader2'>Find Workers</h1>
+            <p className='hometext'>Find workers to suit your needs.</p>
+          </div>
+        )}
       </div>
 
-      <div className='buttoncont'>
+      <div className='homebuttoncont'>
         <Link to="/">
-          <button className='button'>
+          <button className='buttonhome'>
             LOGOUT
           </button>
         </Link>
       </div>
-
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;
