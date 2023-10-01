@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './FindWorkers.css';
 import InputBox from '../../components/InputBox'
+import Sidebar from '../../components/Sidebar/Sidebar';
 
 
 
@@ -37,11 +38,7 @@ function FindWorkers() {
     return (
         <div className='findcontainer'>
             <div>
-                <Link to="/home" className='link-no-underline'>
-                    <div className='homebutton'>
-                        <img src='../../../assets/images/home.png' alt='' />
-                    </div>
-                </Link>
+                <Sidebar page="search"/>
             </div>
 
             <div>

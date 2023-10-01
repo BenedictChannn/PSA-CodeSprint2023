@@ -35,17 +35,13 @@ function Home({ userRole }) {
           <p className='hometext'>Boost your skills and knowledge with PSA Institute.</p>
         </div>
 
-        {/* Conditional rendering for HR Official */}
-        {true && (
           <Link to="/findworkers" className='link-no-underline'>
             <div className='iconhome'>
               <img className='imagehome' src='../../../assets/images/find.png' alt='' />
-              <h1 className='homeheader2'>Find Workers</h1>
-              <p className='hometext'>Find workers to suit your needs.</p>
+              <h1 className='homeheader2'>Review Employees</h1>
+              <p className='hometext'>Rate and give feedback to your fellow employees.</p>
             </div>
           </Link>
-
-        )}
       </div>
 
       <div className='homebuttoncont'>

@@ -7,6 +7,7 @@ import Home from './pages/Home/Home';
 import { Profile } from './pages/Profile/Profile';
 import FindWorkers from './pages/FindWorkers/FindWorkers';
 import FindWorkersResults from './pages/FindWorkersResults/FindWorkersResults';
+import Dashboard from './pages/Dashboard/Dashboard';
 
 
 function App() {
@@ -19,6 +20,8 @@ function App() {
         <Route path="profile" element={<Profile />}/>
         <Route path="findworkers" element={<FindWorkers />}/>
         <Route path="findworkersresults" element={<FindWorkersResults />}/>
+        <Route path="dashboard" element={<Dashboard />}/>
+
 
 
       </Routes>
