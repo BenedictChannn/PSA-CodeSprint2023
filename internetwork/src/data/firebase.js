@@ -57,6 +57,8 @@ async function getProfileDetails(uid) {
     }
 }
 
+
+
 async function sendFindRequest(name) {
     const q = query(
         collection(db, 'users'),

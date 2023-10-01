@@ -1,10 +1,21 @@
 import React from 'react';
 import './Home.css';
 import { Link } from 'react-router-dom';
+import { auth } from '../../data/firebase'
 
 function Home({ userRole }) {
   // Check if the user is an HR official
   const isHROfficial = userRole === 'HR Official';
+  // const user = auth.currentUser.uid;
+
+  // const userJson = require('../../data/users.json')
+
+  // for(let i = 0; i < userJson.length; i++) {
+  //   if (userJson[i]['uid'] === user) {
+  //     isHROfficial = userJson[i]['admin']
+  //   }
+  // }
+  
 
   return (
     <div>
@@ -28,18 +39,20 @@ function Home({ userRole }) {
           </div>
         </Link>
 
-
+        <Link to="https://www.psa-institute.com/courses/">
         <div className='iconhome'>
           <img className='imagehome' src='../../../assets/images/upskill.png' alt='' />
           <h1 className='homeheader2'>Upskill</h1>
           <p className='hometext'>Boost your skills and knowledge with PSA Institute.</p>
         </div>
+        </Link>
+        
 
-          <Link to="/feedbacknonhr" className='link-no-underline'>
+          <Link to="/dashboard" className='link-no-underline'>
             <div className='iconhome'>
               <img className='imagehome' src='../../../assets/images/find.png' alt='' />
-              <h1 className='homeheader2'>Review Employees</h1>
-              <p className='hometext'>Rate and give feedback to your fellow employees.</p>
+              <h1 className='homeheader2'>HR Dashboard</h1>
+              <p className='hometext'>Overview of employee data and other HR features.</p>
             </div>
           </Link>
       </div>
