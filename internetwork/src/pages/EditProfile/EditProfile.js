@@ -3,6 +3,7 @@ import './EditProfile.css'
 import InputBox from '../../components/InputBox'
 import { Button } from '../../components/Button'
 import { auth, fetchUserProfile, editProfileDetails } from '../../data/firebase'
+import { Link } from 'react-router-dom'
 
 
 
@@ -63,12 +64,14 @@ export default function EditProfile() {
 
     <div className='profileMainContainer'>
 
-    <header className='header'>
-                <div className='topLeftLogo'>
-                    <img src='../../../assets/images/logo.png' alt=''/>
-                </div>
-                <h1>Edit Profile</h1> 
-            </header>
+        <header className='header'>
+          <Link to="/home">
+            <div className='topLeftLogo'>
+              <img src='../../../assets/images/logo.png' alt=''/>
+            </div>
+          </Link>
+            
+        </header>
         <div className='editProfileContentContainer'>
             <h3 className='profileHeading'>Name</h3>
             <InputBox className='profileDescription' value={userName} setValue={setUserName} placeholder={name}/>
@@ -83,7 +86,7 @@ export default function EditProfile() {
 
         </div>
 
-        <Button text="EDIT PROFILE" href="/profile" onClick={() => {
+        <Button text="SAVE" href="/profile" onClick={() => {
             console.log("Button clicked"); // Add this line for debugging
             editProfile("test");
         }}></Button>

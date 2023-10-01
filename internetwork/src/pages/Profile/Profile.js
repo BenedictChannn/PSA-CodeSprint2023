@@ -46,9 +46,11 @@ export function Profile() {
         <div className='profileMainContainer'>
 
             <header className='header'>
-                <div className='topLeftLogo'>
+                <Link to="/home">
+                    <div className='topLeftLogo'>
                     <img src='../../../assets/images/logo.png' alt=''/>
-                </div>
+                    </div>
+                </Link>
                 <h1>View Profile</h1> 
             </header>
             <div className='profileContentContainer'>
