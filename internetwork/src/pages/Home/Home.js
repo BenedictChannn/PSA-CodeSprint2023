@@ -1,20 +1,36 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Home.css';
 import { Link } from 'react-router-dom';
-import { auth } from '../../data/firebase'
+import { auth, getName } from '../../data/firebase'
 
 function Home({ userRole }) {
   // Check if the user is an HR official
-  const isHROfficial = userRole === 'HR Official';
-  // const user = auth.currentUser.uid;
+  const [isHROfficial, setIsHROfficial] = useState(false)
+  const user = auth.currentUser.uid;
 
-  // const userJson = require('../../data/users.json')
+  const userJson = require('../../data/users.json')
 
-  // for(let i = 0; i < userJson.length; i++) {
-  //   if (userJson[i]['uid'] === user) {
-  //     isHROfficial = userJson[i]['admin']
-  //   }
-  // }
+  
+
+  useEffect(() => {
+    async function getAdminRights() {
+        try {
+          const name = await getName(user)
+
+          for(let i = 0; i < userJson.length; i++) {
+            if (userJson[i]['name'] === name) {
+              setIsHROfficial(userJson[i]['admin'])
+              console.log(isHROfficial)
+            }
+          }
+        } catch (error) {
+            console.error(error);
+        }
+      }
+
+    getAdminRights();
+}, []);
+
   
 
   return (
@@ -48,13 +64,13 @@ function Home({ userRole }) {
         </Link>
         
 
-          <Link to="/dashboard" className='link-no-underline'>
+          {isHROfficial && <Link to="/dashboard" className='link-no-underline'>
             <div className='iconhome'>
               <img className='imagehome' src='../../../assets/images/find.png' alt='' />
               <h1 className='homeheader2'>HR Dashboard</h1>
               <p className='hometext'>Overview of employee data and other HR features.</p>
             </div>
-          </Link>
+          </Link>}
       </div>
 
       <div className='homebuttoncont'>

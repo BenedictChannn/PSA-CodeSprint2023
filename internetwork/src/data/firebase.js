@@ -57,6 +57,28 @@ async function getProfileDetails(uid) {
     }
 }
 
+async function getName(uid) {
+    const q = query(
+        collection(db, 'users'),
+        where('uid', '==', uid));
+    try {
+        const querySnapshot = await getDocs(q);
+        let data = []
+        querySnapshot.forEach((doc) => {
+            // doc.data() is never undefined for query doc snapshots
+            data.push(doc.data())
+        
+        });
+        console.log(data[0]['name'])
+        return data[0]['name']
+
+
+    } catch (error) {
+        console.log(error);
+    }
+    
+}
+
 
 
 async function sendFindRequest(name) {
@@ -119,4 +141,4 @@ async function loadUserData() {
 }
 
 
-export { auth, editProfileDetails, fetchUserProfile, sendFindRequest }; 
+export { getName, auth, editProfileDetails, fetchUserProfile, sendFindRequest }; 
