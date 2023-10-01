@@ -32,7 +32,9 @@ The ML-powered solution aims to revolutionize the way employee transfers are man
 
 ## To use all the features
 Log in with:
+
   **Email:** danielb@gmail.com.
+  
   **Password:** password.
 
 ## Getting Started
