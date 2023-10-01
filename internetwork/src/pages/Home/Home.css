@@ -24,30 +24,33 @@
 }
 
 /* Apply the font to a CSS class or element */
-.text {
+.hometext {
     font-family: 'Garet-Book', sans-serif;
     text-align: center;
     color: white;
     margin: 0;
-    font-size: 100%; /* Added 'px' unit */
+    font-size: 100%;
+    /* Added 'px' unit */
     padding-left: 35%;
     padding-right: 35%;
 }
 
-.header {
+.homeheader {
     font-family: 'PPTelegraf-UltraLight', sans-serif;
     text-align: center;
     color: white;
-    font-size: 100%; /* Adjusted font size with 'px' unit */
+    font-size: 100%;
+    /* Adjusted font size with 'px' unit */
     padding-left: 5%;
     padding-right: 5%;
 }
 
-.header2 {
+.homeheader2 {
     font-family: 'PPTelegraf-UltraLight', sans-serif;
     text-align: center;
-    color: yellow;
-    font-size: 100%; /* Adjusted font size with 'px' unit */
+    color: white;
+    font-size: 250%;
+    /* Adjusted font size with 'px' unit */
     padding-left: 5%;
     padding-right: 5%;
 }
@@ -59,27 +62,34 @@
     padding-top: 2%;
 }
 
-.image {
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
+.imagehome {
     height: 200px;
     width: 200px;
-    
+
 }
 
-.image img {
-    width: 60%;
-}
-
-.icon {
-    flex: 1;
+.iconhome {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    margin-left: 3%;
 }
 
-.button {
+.iconhome p {
+    width: 70%
+}
+
+.homeiconcont {
+    display: flex; /* Use flexbox to make icons horizontal */
+    justify-content: space-evenly; 
+    margin-left: 5%;
+    margin-right: 10%;
+    margin-top: 3%;
+}
+
+.buttonhome {
     font-family: 'Garet-Book', sans-serif;
     font-weight: bold;
     text-align: center;
@@ -87,13 +97,16 @@
     background-color: black;
     border-color: yellow;
     border-width: 3px;
-    font-size: 100%; /* Adjust the font size as needed */
-    padding: 8px 65px; /* Adjust the padding values as needed (top and bottom, left and right) */
+    font-size: 100%;
+    /* Adjust the font size as needed */
+    padding: 8px 65px;
+    /* Adjust the padding values as needed (top and bottom, left and right) */
 }
 
-.buttoncont {
+.homebuttoncont {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 2%;
+    padding-top: 4%;
+    padding-left: 4%;
 }

@@ -7,6 +7,7 @@ import Home from './pages/Home/Home';
 import { Profile } from './pages/Profile/Profile';
 import EditProfile from './pages/EditProfile/EditProfile';
 
+
 function App() {
   return (
     <BrowserRouter>

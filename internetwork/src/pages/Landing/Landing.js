@@ -26,6 +26,7 @@ function Landing() {
       <div className='buttoncont'>
         <Link to="/login">
           <button className='goToLoginButton'>
+
             LOGIN
           </button>
         </Link>
