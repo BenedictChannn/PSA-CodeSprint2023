@@ -1,0 +1,227 @@
+[
+    {
+        "name": "Alice Smith",
+        "jobRole": "Operations Staff",
+        "department": "Operations",
+        "skills": ["Logistics Management", "Equipment Handling", "Safety Protocols"],
+        "priorExp": ["2 years in Operations"],
+        "supervisorReviews": [3, 4],
+        "projects": ["Port Efficiency Enhancement", "Safety Training Program"]
+    },
+    {
+        "name": "Eva Martinez",
+        "jobRole": "Operations Staff",
+        "department": "Operations",
+        "skills": ["Inventory Management", "Process Optimization", "Safety Protocols"],
+        "priorExp": ["3 years as Operations Staff"],
+        "supervisorReviews": [4, 4],
+        "projects": ["Turnaround Time Reduction Initiative", "Safety Compliance Audit"]
+    },
+    {
+        "name": "Grace Chen",
+        "jobRole": "Operations Staff",
+        "department": "Operations",
+        "skills": ["Inventory Management", "Supply Chain Management", "Safety Protocols"],
+        "priorExp": ["2 years as Operations Staff", "1 year in Inventory Management"],
+        "supervisorReviews": [3, 4],
+        "projects": ["Inventory Optimization", "Safety Compliance Audit"]
+    },
+    {
+        "name": "Bob Johnson",
+        "jobRole": "Infocomm Technology Supervisor",
+        "department": "Infocomm Technology",
+        "skills": ["Network Administration", "Cybersecurity", "Project Management"],
+        "priorExp": ["3 years as IT Staff", "1 year in Project Management"],
+        "supervisorReviews": [4, 4],
+        "projects": ["Network Infrastructure Upgrade", "Cybersecurity Enhancement", "IT Helpdesk Improvement"]
+    },
+    {
+        "name": "Frank Adams",
+        "jobRole": "Infocomm Technology Supervisor",
+        "department": "Infocomm Technology",
+        "skills": ["Technical Support", "Hardware Maintenance", "Network Security"],
+        "priorExp": ["2 years as IT Support", "1 year in Network Administration"],
+        "supervisorReviews": [3, 3],
+        "projects": ["IT Helpdesk Improvement", "Network Security Enhancement"]
+    },
+    {
+        "name": "Karen Garcia",
+        "jobRole": "Infocomm Technology Supervisor",
+        "department": "Infocomm Technology",
+        "skills": ["Project Management", "Cybersecurity", "Network Maintenance"],
+        "priorExp": ["2 years as IT Support", "1 year in Project Management"],
+        "supervisorReviews": [3, 4],
+        "projects": ["Network Infrastructure Upgrade", "Cybersecurity Enhancement"]
+    },
+    {
+        "name": "Carol Lee",
+        "jobRole": "Engineering Manager",
+        "department": "Engineering",
+        "skills": ["Project Management", "Technical Engineering", "Quality Control"],
+        "priorExp": ["5 years as Engineering Supervisor", "2 years in Technical Engineering"],
+        "supervisorReviews": [5, 4],
+        "projects": ["New Product Development", "Quality Control System Upgrade", "Process Optimization"]
+    },
+    {
+        "name": "Ivy Taylor",
+        "jobRole": "Engineering Manager",
+        "department": "Engineering",
+        "skills": ["Technical Engineering", "Quality Control", "Process Optimization"],
+        "priorExp": ["6 years as Operations Supervisor"],
+        "supervisorReviews": [5, 4],
+        "projects": ["Process Optimization", "Product Development"]
+    },
+    {
+        "name": "Liam Rodriguez",
+        "jobRole": "Corporate Staff",
+        "department": "Corporate",
+        "skills": ["Administrative Support", "Financial Analysis", "Meeting Coordination"],
+        "priorExp": ["1 year in Corporate"],
+        "supervisorReviews": [3, 3],
+        "projects": ["Financial Reporting Automation", "Corporate Events Coordination"]
+    },
+    {
+        "name": "David Wang",
+        "jobRole": "Corporate Staff",
+        "department": "Corporate",
+        "skills": ["Administrative Support", "Financial Analysis", "Data Analysis"],
+        "priorExp": ["2 years in Corporate"],
+        "supervisorReviews": [3, 3],
+        "projects": ["Financial Reporting Automation", "Data Analysis"]
+    },
+    {
+        "name": "Mia Kim",
+        "jobRole": "Operations Supervisor",
+        "department": "Operations",
+        "skills": ["Leadership", "Safety Compliance", "Inventory Management"],
+        "priorExp": ["4 years as Operations Staff"],
+        "supervisorReviews": [4, 4],
+        "projects": ["Turnaround Time Reduction Initiative", "Safety Compliance Audit"]
+    },
+    {
+        "name": "Noah Hall",
+        "jobRole": "Infocomm Technology Manager",
+        "department": "Infocomm Technology",
+        "skills": ["IT Department Management", "Technology Strategy", "Cybersecurity"],
+        "priorExp": ["8 years in IT Supervisor", "4 years in Technology Strategy"],
+        "supervisorReviews": [5, 5],
+        "projects": ["Cybersecurity Enhancement", "IT Strategy Planning"]
+    },
+    {
+        "name": "Olivia Lopez",
+        "jobRole": "Corporate Manager",
+        "department": "Corporate",
+        "skills": ["Strategic Leadership", "Financial Analysis", "Strategic Planning"],
+        "priorExp": ["6 years in Corporate Supervisor", "4 years in Strategic Planning"],
+        "supervisorReviews": [5, 5],
+        "projects": ["Strategic Planning Initiative", "Financial Forecasting"]
+    },
+    {
+        "name": "Mark Wilson",
+        "jobRole": "Operations Manager",
+        "department": "Operations",
+        "skills": ["Team Leadership", "Operations Optimization", "Safety Oversight"],
+        "priorExp": ["6 years as Operations Supervisor"],
+        "supervisorReviews": [5, 4],
+        "projects": ["Port Efficiency Enhancement", "Automation Implementation"]
+    },
+    {
+        "name": "Sarah Garcia",
+        "jobRole": "Corporate Manager",
+        "department": "Corporate",
+        "skills": ["Strategic Leadership", "Financial Analysis", "Strategic Planning"],
+        "priorExp": ["6 years in Corporate Supervisor", "4 years in Strategic Planning"],
+        "supervisorReviews": [5, 5],
+        "projects": ["Strategic Planning Initiative", "Financial Forecasting"]
+    },
+    {
+        "name": "John Doe",
+        "jobRole": "Operations Staff",
+        "department": "Operations",
+        "skills": ["Logistics Management", "Inventory Management", "Safety Protocols"],
+        "priorExp": ["2 years in Operations"],
+        "supervisorReviews": [3, 4],
+        "projects": ["Port Efficiency Enhancement", "Safety Training Program"]
+    },
+    {
+        "name": "Megan Smith",
+        "jobRole": "Operations Supervisor",
+        "department": "Operations",
+        "skills": ["Leadership", "Safety Compliance", "Efficiency Analysis"],
+        "priorExp": ["4 years as Operations Staff"],
+        "supervisorReviews": [4, 4],
+        "projects": ["Turnaround Time Reduction Initiative", "Safety Compliance Audit"]
+    },
+    {
+        "name": "Daniel Brown",
+        "jobRole": "Infocomm Technology Manager",
+        "department": "Infocomm Technology",
+        "skills": ["IT Department Management", "Technology Strategy", "Network Security"],
+        "priorExp": ["8 years in IT Supervisor", "4 years in Technology Strategy"],
+        "supervisorReviews": [5, 5],
+        "projects": ["Cybersecurity Enhancement", "IT Strategy Planning"]
+    },
+    {
+        "name": "Sophia Martinez",
+        "jobRole": "Engineering Staff",
+        "department": "Engineering",
+        "skills": ["Technical Assistance", "Quality Control", "Process Optimization"],
+        "priorExp": ["1 year in Engineering"],
+        "supervisorReviews": [3, 4],
+        "projects": ["Product Testing", "Engineering Documentation"]
+    },
+    {
+        "name": "William Johnson",
+        "jobRole": "Infocomm Technology Manager",
+        "department": "Infocomm Technology",
+        "skills": ["IT Department Management", "Technology Strategy", "Network Security"],
+        "priorExp": ["8 years in IT Supervisor", "4 years in Technology Strategy"],
+        "supervisorReviews": [5, 5],
+        "projects": ["Cybersecurity Enhancement", "IT Strategy Planning"]
+    },
+    {
+        "name": "Ava Lee",
+        "jobRole": "Engineering Staff",
+        "department": "Engineering",
+        "skills": ["Technical Assistance", "Quality Control", "Process Optimization"],
+        "priorExp": ["2 years in Engineering"],
+        "supervisorReviews": [3, 4],
+        "projects": ["Product Testing", "Process Optimization"]
+    },
+    {
+        "name": "James Wang",
+        "jobRole": "Corporate Staff",
+        "department": "Corporate",
+        "skills": ["Administrative Support", "Financial Analysis", "Strategic Planning"],
+        "priorExp": ["1 year in Corporate"],
+        "supervisorReviews": [3, 3],
+        "projects": ["Financial Reporting Automation", "Strategic Planning Initiative"]
+    },
+    {
+        "name": "Emma Kim",
+        "jobRole": "Operations Supervisor",
+        "department": "Operations",
+        "skills": ["Leadership", "Safety Compliance", "Efficiency Analysis"],
+        "priorExp": ["3 years as Operations Staff"],
+        "supervisorReviews": [4, 4],
+        "projects": ["Turnaround Time Reduction Initiative", "Efficiency Analysis"]
+    },
+    {
+        "name": "Michael Hall",
+        "jobRole": "Infocomm Technology Manager",
+        "department": "Infocomm Technology",
+        "skills": ["IT Department Management", "Technology Strategy", "Cybersecurity"],
+        "priorExp": ["7 years in IT Supervisor", "4 years in Technology Strategy"],
+        "supervisorReviews": [5, 5],
+        "projects": ["Cybersecurity Enhancement", "IT Strategy Planning"]
+    },
+    {
+        "name": "Sophie Lopez",
+        "jobRole": "Corporate Manager",
+        "department": "Corporate",
+        "skills": ["Strategic Leadership", "Financial Analysis", "Strategic Planning"],
+        "priorExp": ["6 years in Corporate Supervisor", "4 years in Strategic Planning"],
+        "supervisorReviews": [5, 5],
+        "projects": ["Strategic Planning Initiative", "Financial Forecasting"]
+    }
+]

@@ -8,6 +8,7 @@ import { Profile } from './pages/Profile/Profile';
 import FindWorkers from './pages/FindWorkers/FindWorkers';
 import FindWorkersResults from './pages/FindWorkersResults/FindWorkersResults';
 import Dashboard from './pages/Dashboard/Dashboard';
+import EditProfile from './pages/EditProfile/EditProfile';
 
 
 function App() {
@@ -21,9 +22,7 @@ function App() {
         <Route path="findworkers" element={<FindWorkers />}/>
         <Route path="findworkersresults" element={<FindWorkersResults />}/>
         <Route path="dashboard" element={<Dashboard />}/>
-
-
-
+        <Route path="edit-profile" element={<EditProfile/>}/>
       </Routes>
     </BrowserRouter>
   );

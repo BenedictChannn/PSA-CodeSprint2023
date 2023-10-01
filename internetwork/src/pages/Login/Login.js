@@ -73,17 +73,7 @@ export default function Login() {
 
       setEmail('')
       setPassword('')
-
-
     
-  }
-
-  const handleEmail = (event) => {
-    setEmail(event.target.value)
-  }
-
-  const handlePassword = (event) => {
-    setPassword(event.target.value)
   }
 
   return (
@@ -93,9 +83,9 @@ export default function Login() {
       </div>
       <form>
 
-        <InputBox placeholder="EMAIL" value={email} setValue={handleEmail}/>
+        <InputBox placeholder="EMAIL" value={email} setValue={setEmail}/>
         {emailErrorMsg !== "" && <label className='errorMsg'>{emailErrorMsg}</label>}
-        <InputBox placeholder="PASSWORD" type="password" value={password} setValue={handlePassword}/>
+        <InputBox placeholder="PASSWORD" type="password" value={password} setValue={setPassword}/>
         {passwordErrorMsg !== "" && <label className='errorMsg'>{passwordErrorMsg}</label>}
         <p className='forgotPassword'>Forgot your password? <span>Click here</span></p>
 
