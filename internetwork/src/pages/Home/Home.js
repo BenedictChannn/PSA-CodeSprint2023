@@ -29,11 +29,13 @@ function Home({ userRole }) {
         </Link>
 
 
-        <div className='iconhome'>
-          <img className='imagehome' src='../../../assets/images/upskill.png' alt='' />
-          <h1 className='homeheader2'>Upskill</h1>
-          <p className='hometext'>Boost your skills and knowledge with PSA Institute.</p>
-        </div>
+        <a href="https://www.psa-institute.com/courses/" className='link-no-underline' target="_blank" rel="noopener noreferrer">
+          <div className='iconhome'>
+            <img className='imagehome' src='../../../assets/images/upskill.png' alt='' />
+            <h1 className='homeheader2'>Upskill</h1>
+            <p className='hometext'>Boost your skills and knowledge with PSA Institute.</p>
+          </div>
+        </a>
 
           <Link to="/feedbacknonhr" className='link-no-underline'>
             <div className='iconhome'>
