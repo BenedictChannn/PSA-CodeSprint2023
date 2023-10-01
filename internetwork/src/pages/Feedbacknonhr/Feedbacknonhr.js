@@ -27,7 +27,7 @@ function Feedbacknonhr() {
     }
 
     const handleSubmit = (e) => {
-        navigate('/dashboard')
+        navigate('/home')
     }
 
     return (
