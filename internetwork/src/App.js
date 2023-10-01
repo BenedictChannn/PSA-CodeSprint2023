@@ -5,6 +5,8 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './pages/Home/Home';
 import { Profile } from './pages/Profile/Profile';
+import FindWorkers from './pages/FindWorkers/FindWorkers';
+import FindWorkersResults from './pages/FindWorkersResults/FindWorkersResults';
 
 
 function App() {
@@ -15,6 +17,9 @@ function App() {
         <Route path="home" element={<Home />} />
         <Route path="login" element={<Login />} />
         <Route path="profile" element={<Profile />}/>
+        <Route path="findworkers" element={<FindWorkers />}/>
+        <Route path="findworkersresults" element={<FindWorkersResults />}/>
+
 
       </Routes>
     </BrowserRouter>

@@ -74,7 +74,6 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-left: 3%;
 }
 
 .iconhome p {
@@ -88,6 +87,10 @@
     margin-right: 10%;
     margin-top: 3%;
 }
+
+.link-no-underline {
+    text-decoration: none; /* Remove the underline */
+  }
 
 .buttonhome {
     font-family: 'Garet-Book', sans-serif;
