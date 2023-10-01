@@ -3,11 +3,13 @@ import './EditProfile.css'
 import InputBox from '../../components/InputBox'
 import { Button } from '../../components/Button'
 import { auth, fetchUserProfile, editProfileDetails } from '../../data/firebase'
+import { Link } from 'react-router-dom'
 
 
 
 export default function EditProfile() {
-    // const user = auth.currentUser;
+    //const user = auth.currentUser;
+    const user = auth.currentUser.uid;
     const [userDetails, setUserDetails] = useState(null);
 
     const [userName, setUserName] = useState('')
@@ -19,7 +21,7 @@ export default function EditProfile() {
     useEffect(() => {
       async function fetchUserDetails() {
           try {
-              const userData = await fetchUserProfile("test");
+              const userData = await fetchUserProfile(user);
               setUserDetails(userData);
           } catch (error) {
               console.error(error);
@@ -59,14 +61,26 @@ export default function EditProfile() {
 
     }
 
+    function handleSkillsChange(event) {
+      setUserSkills(event.target.value.split(","))
+      
+    }
+
+    function handlePriorExpChange(event) {
+      setUserPriorExp(event.target.value.split(","))
+    }
+
   return (
 
     <div className='profileMainContainer'>
 
     <header className='header'>
+              <Link to="/home">
                 <div className='topLeftLogo'>
                     <img src='../../../assets/images/logo.png' alt=''/>
                 </div>
+              </Link>
+                
                 <h1>Edit Profile</h1> 
             </header>
         <div className='editProfileContentContainer'>
@@ -77,7 +91,14 @@ export default function EditProfile() {
             <h3 className='profileHeading'>Current Department</h3>
             <InputBox className='profileDescription' value={userDept} setValue={setUserDept} placeholder={department}/>
             <h3 className='profileHeading'>Skills</h3>
-            <InputBox className='profileDescription' value={userSkills} setValue={setUserSkills} placeholder={skills}/>
+            <div className="container">
+              <input className="input" type="text" placeholder={skills} onChange={handleSkillsChange} value={userSkills}>
+              </input>
+            </div>            
+            <div className="container">
+              <input className="input" type="text" placeholder={userPriorExp} onChange={handlePriorExpChange} value={priorExp}>
+              </input>
+            </div>            
             <h3 className='profileHeading'>Prior Experiences</h3>
             <InputBox className='profileDescription'value={userPriorExp} setValue={setUserPriorExp} placeholder={priorExp}/>
 
@@ -85,7 +106,7 @@ export default function EditProfile() {
 
         <Button text="EDIT PROFILE" href="/profile" onClick={() => {
             console.log("Button clicked"); // Add this line for debugging
-            editProfile("test");
+            editProfile(user);
         }}></Button>
     </div>
     

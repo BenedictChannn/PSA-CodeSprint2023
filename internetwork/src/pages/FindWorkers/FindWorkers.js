@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import './FindWorkers.css';
 import InputBox from '../../components/InputBox'
 import Sidebar from '../../components/Sidebar/Sidebar';
+import { sendFindRequest } from '../../data/firebase';
 
 
 
@@ -16,22 +17,9 @@ function FindWorkers() {
     const navigate = useNavigate()
 
 
-    const handleDepartmentChange = (event) => {
-        setSelectedDepartment(event.target.value); // Update selected option when changed
-    };
-    const handleProjectChange = (event) => {
-        setSelectedProject(event.target.value); // Update selected option when changed
-    };
-
-    const handleName = (event) => {
-        setName(event.target.value)
-    }
-
-    const handleSkill = (event) => {
-        setSkill(event.target.value)
-    }
 
     const handleFind = (e) => {
+        sendFindRequest(name)
         navigate('/findworkersresults')
     }
 
@@ -57,12 +45,12 @@ function FindWorkers() {
                     </h1>
                 </header>
                 <div>
-                    <InputBox placeholder="NAME" value={name} setValue={handleName} />
+                    <InputBox placeholder="NAME" value={name} setValue={setName} />
                 </div>
                 <div>
                     <select
                         value={selectedDepartment}
-                        onChange={handleDepartmentChange}
+                        onChange={setSelectedDepartment}
                         className='inputf'
                     >
                         <option value="">DEPARTMENT</option>
@@ -75,7 +63,7 @@ function FindWorkers() {
                 <div>
                     <select
                         value={selectedProject}
-                        onChange={handleProjectChange}
+                        onChange={setSelectedProject}
                         className='inputf'
                     >
                         <option value="">PROJECT</option>
@@ -84,7 +72,7 @@ function FindWorkers() {
                     </select>
                 </div>
                 <div>
-                    <InputBox placeholder="SKILLS" value={skill} setValue={handleSkill} />
+                    <InputBox placeholder="SKILLS" value={skill} setValue={setSkill} />
                 </div>
                 <div className='findbuttcont'>
                     <button className='findButton' onClick={handleFind}>
