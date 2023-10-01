@@ -6,7 +6,8 @@
         "skills": ["Logistics Management", "Equipment Handling", "Safety Protocols"],
         "priorExp": ["2 years in Operations"],
         "supervisorReviews": [3, 4],
-        "projects": ["Port Efficiency Enhancement", "Safety Training Program"]
+        "projects": ["Port Efficiency Enhancement", "Safety Training Program"],
+        "admin": false
     },
     {
         "name": "Eva Martinez",
@@ -15,7 +16,8 @@
         "skills": ["Inventory Management", "Process Optimization", "Safety Protocols"],
         "priorExp": ["3 years as Operations Staff"],
         "supervisorReviews": [4, 4],
-        "projects": ["Turnaround Time Reduction Initiative", "Safety Compliance Audit"]
+        "projects": ["Turnaround Time Reduction Initiative", "Safety Compliance Audit"],
+        "admin": false
     },
     {
         "name": "Grace Chen",
@@ -24,7 +26,8 @@
         "skills": ["Inventory Management", "Supply Chain Management", "Safety Protocols"],
         "priorExp": ["2 years as Operations Staff", "1 year in Inventory Management"],
         "supervisorReviews": [3, 4],
-        "projects": ["Inventory Optimization", "Safety Compliance Audit"]
+        "projects": ["Inventory Optimization", "Safety Compliance Audit"],
+        "admin": false
     },
     {
         "name": "Bob Johnson",
@@ -33,7 +36,8 @@
         "skills": ["Network Administration", "Cybersecurity", "Project Management"],
         "priorExp": ["3 years as IT Staff", "1 year in Project Management"],
         "supervisorReviews": [4, 4],
-        "projects": ["Network Infrastructure Upgrade", "Cybersecurity Enhancement", "IT Helpdesk Improvement"]
+        "projects": ["Network Infrastructure Upgrade", "Cybersecurity Enhancement", "IT Helpdesk Improvement"],
+        "admin": true
     },
     {
         "name": "Frank Adams",
@@ -42,7 +46,8 @@
         "skills": ["Technical Support", "Hardware Maintenance", "Network Security"],
         "priorExp": ["2 years as IT Support", "1 year in Network Administration"],
         "supervisorReviews": [3, 3],
-        "projects": ["IT Helpdesk Improvement", "Network Security Enhancement"]
+        "projects": ["IT Helpdesk Improvement", "Network Security Enhancement"],
+        "admin": true
     },
     {
         "name": "Karen Garcia",
@@ -51,7 +56,8 @@
         "skills": ["Project Management", "Cybersecurity", "Network Maintenance"],
         "priorExp": ["2 years as IT Support", "1 year in Project Management"],
         "supervisorReviews": [3, 4],
-        "projects": ["Network Infrastructure Upgrade", "Cybersecurity Enhancement"]
+        "projects": ["Network Infrastructure Upgrade", "Cybersecurity Enhancement"],
+        "admin": true
     },
     {
         "name": "Carol Lee",
@@ -60,7 +66,8 @@
         "skills": ["Project Management", "Technical Engineering", "Quality Control"],
         "priorExp": ["5 years as Engineering Supervisor", "2 years in Technical Engineering"],
         "supervisorReviews": [5, 4],
-        "projects": ["New Product Development", "Quality Control System Upgrade", "Process Optimization"]
+        "projects": ["New Product Development", "Quality Control System Upgrade", "Process Optimization"],
+        "admin": false
     },
     {
         "name": "Ivy Taylor",
@@ -69,7 +76,8 @@
         "skills": ["Technical Engineering", "Quality Control", "Process Optimization"],
         "priorExp": ["6 years as Operations Supervisor"],
         "supervisorReviews": [5, 4],
-        "projects": ["Process Optimization", "Product Development"]
+        "projects": ["Process Optimization", "Product Development"],
+        "admin": false
     },
     {
         "name": "Liam Rodriguez",
@@ -78,7 +86,8 @@
         "skills": ["Administrative Support", "Financial Analysis", "Meeting Coordination"],
         "priorExp": ["1 year in Corporate"],
         "supervisorReviews": [3, 3],
-        "projects": ["Financial Reporting Automation", "Corporate Events Coordination"]
+        "projects": ["Financial Reporting Automation", "Corporate Events Coordination"],
+        "admin": false
     },
     {
         "name": "David Wang",
@@ -87,7 +96,8 @@
         "skills": ["Administrative Support", "Financial Analysis", "Data Analysis"],
         "priorExp": ["2 years in Corporate"],
         "supervisorReviews": [3, 3],
-        "projects": ["Financial Reporting Automation", "Data Analysis"]
+        "projects": ["Financial Reporting Automation", "Data Analysis"],
+        "admin": false
     },
     {
         "name": "Mia Kim",
@@ -96,7 +106,8 @@
         "skills": ["Leadership", "Safety Compliance", "Inventory Management"],
         "priorExp": ["4 years as Operations Staff"],
         "supervisorReviews": [4, 4],
-        "projects": ["Turnaround Time Reduction Initiative", "Safety Compliance Audit"]
+        "projects": ["Turnaround Time Reduction Initiative", "Safety Compliance Audit"],
+        "admin": true
     },
     {
         "name": "Noah Hall",
@@ -105,7 +116,8 @@
         "skills": ["IT Department Management", "Technology Strategy", "Cybersecurity"],
         "priorExp": ["8 years in IT Supervisor", "4 years in Technology Strategy"],
         "supervisorReviews": [5, 5],
-        "projects": ["Cybersecurity Enhancement", "IT Strategy Planning"]
+        "projects": ["Cybersecurity Enhancement", "IT Strategy Planning"],
+        "admin": false
     },
     {
         "name": "Olivia Lopez",
@@ -114,7 +126,8 @@
         "skills": ["Strategic Leadership", "Financial Analysis", "Strategic Planning"],
         "priorExp": ["6 years in Corporate Supervisor", "4 years in Strategic Planning"],
         "supervisorReviews": [5, 5],
-        "projects": ["Strategic Planning Initiative", "Financial Forecasting"]
+        "projects": ["Strategic Planning Initiative", "Financial Forecasting"],
+        "admin": false
     },
     {
         "name": "Mark Wilson",
@@ -123,7 +136,8 @@
         "skills": ["Team Leadership", "Operations Optimization", "Safety Oversight"],
         "priorExp": ["6 years as Operations Supervisor"],
         "supervisorReviews": [5, 4],
-        "projects": ["Port Efficiency Enhancement", "Automation Implementation"]
+        "projects": ["Port Efficiency Enhancement", "Automation Implementation"],
+        "admin": false
     },
     {
         "name": "Sarah Garcia",
@@ -132,7 +146,8 @@
         "skills": ["Strategic Leadership", "Financial Analysis", "Strategic Planning"],
         "priorExp": ["6 years in Corporate Supervisor", "4 years in Strategic Planning"],
         "supervisorReviews": [5, 5],
-        "projects": ["Strategic Planning Initiative", "Financial Forecasting"]
+        "projects": ["Strategic Planning Initiative", "Financial Forecasting"],
+        "admin": false
     },
     {
         "name": "John Doe",
@@ -141,7 +156,8 @@
         "skills": ["Logistics Management", "Inventory Management", "Safety Protocols"],
         "priorExp": ["2 years in Operations"],
         "supervisorReviews": [3, 4],
-        "projects": ["Port Efficiency Enhancement", "Safety Training Program"]
+        "projects": ["Port Efficiency Enhancement", "Safety Training Program"],
+        "admin": false
     },
     {
         "name": "Megan Smith",
@@ -150,7 +166,8 @@
         "skills": ["Leadership", "Safety Compliance", "Efficiency Analysis"],
         "priorExp": ["4 years as Operations Staff"],
         "supervisorReviews": [4, 4],
-        "projects": ["Turnaround Time Reduction Initiative", "Safety Compliance Audit"]
+        "projects": ["Turnaround Time Reduction Initiative", "Safety Compliance Audit"],
+        "admin": true
     },
     {
         "name": "Daniel Brown",
@@ -159,7 +176,8 @@
         "skills": ["IT Department Management", "Technology Strategy", "Network Security"],
         "priorExp": ["8 years in IT Supervisor", "4 years in Technology Strategy"],
         "supervisorReviews": [5, 5],
-        "projects": ["Cybersecurity Enhancement", "IT Strategy Planning"]
+        "projects": ["Cybersecurity Enhancement", "IT Strategy Planning"],
+        "admin": false
     },
     {
         "name": "Sophia Martinez",
@@ -168,7 +186,8 @@
         "skills": ["Technical Assistance", "Quality Control", "Process Optimization"],
         "priorExp": ["1 year in Engineering"],
         "supervisorReviews": [3, 4],
-        "projects": ["Product Testing", "Engineering Documentation"]
+        "projects": ["Product Testing", "Engineering Documentation"],
+        "admin": false
     },
     {
         "name": "William Johnson",
@@ -177,7 +196,8 @@
         "skills": ["IT Department Management", "Technology Strategy", "Network Security"],
         "priorExp": ["8 years in IT Supervisor", "4 years in Technology Strategy"],
         "supervisorReviews": [5, 5],
-        "projects": ["Cybersecurity Enhancement", "IT Strategy Planning"]
+        "projects": ["Cybersecurity Enhancement", "IT Strategy Planning"],
+        "admin": false
     },
     {
         "name": "Ava Lee",
@@ -186,7 +206,8 @@
         "skills": ["Technical Assistance", "Quality Control", "Process Optimization"],
         "priorExp": ["2 years in Engineering"],
         "supervisorReviews": [3, 4],
-        "projects": ["Product Testing", "Process Optimization"]
+        "projects": ["Product Testing", "Process Optimization"],
+        "admin": false
     },
     {
         "name": "James Wang",
@@ -195,7 +216,8 @@
         "skills": ["Administrative Support", "Financial Analysis", "Strategic Planning"],
         "priorExp": ["1 year in Corporate"],
         "supervisorReviews": [3, 3],
-        "projects": ["Financial Reporting Automation", "Strategic Planning Initiative"]
+        "projects": ["Financial Reporting Automation", "Strategic Planning Initiative"],
+        "admin": false
     },
     {
         "name": "Emma Kim",
@@ -204,7 +226,8 @@
         "skills": ["Leadership", "Safety Compliance", "Efficiency Analysis"],
         "priorExp": ["3 years as Operations Staff"],
         "supervisorReviews": [4, 4],
-        "projects": ["Turnaround Time Reduction Initiative", "Efficiency Analysis"]
+        "projects": ["Turnaround Time Reduction Initiative", "Efficiency Analysis"],
+        "admin": true
     },
     {
         "name": "Michael Hall",
@@ -213,7 +236,8 @@
         "skills": ["IT Department Management", "Technology Strategy", "Cybersecurity"],
         "priorExp": ["7 years in IT Supervisor", "4 years in Technology Strategy"],
         "supervisorReviews": [5, 5],
-        "projects": ["Cybersecurity Enhancement", "IT Strategy Planning"]
+        "projects": ["Cybersecurity Enhancement", "IT Strategy Planning"],
+        "admin": false
     },
     {
         "name": "Sophie Lopez",
@@ -222,6 +246,7 @@
         "skills": ["Strategic Leadership", "Financial Analysis", "Strategic Planning"],
         "priorExp": ["6 years in Corporate Supervisor", "4 years in Strategic Planning"],
         "supervisorReviews": [5, 5],
-        "projects": ["Strategic Planning Initiative", "Financial Forecasting"]
+        "projects": ["Strategic Planning Initiative", "Financial Forecasting"],
+        "admin": false
     }
 ]
