@@ -74,7 +74,6 @@ export default function EditProfile() {
 
     <div className='profileMainContainer'>
 
-<<<<<<< HEAD
         <header className='header'>
           <Link to="/home">
             <div className='topLeftLogo'>
@@ -83,17 +82,7 @@ export default function EditProfile() {
           </Link>
             
         </header>
-=======
-    <header className='header'>
-              <Link to="/home">
-                <div className='topLeftLogo'>
-                    <img src='../../../assets/images/logo.png' alt=''/>
-                </div>
-              </Link>
-                
-                <h1>Edit Profile</h1> 
-            </header>
->>>>>>> main
+
         <div className='editProfileContentContainer'>
             <h3 className='profileHeading'>Name</h3>
             <InputBox className='profileDescription' value={userName} setValue={setUserName} placeholder={name}/>
