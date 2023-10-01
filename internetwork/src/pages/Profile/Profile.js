@@ -1,10 +1,47 @@
-import React, { Component } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Button } from '../../components/Button'
-import { auth } from '../../data/firebase'
+import { auth, fetchUserProfile } from '../../data/firebase'
 import './Profile.css'
 
 export function Profile() {
+    const user = auth.currentUser
+    const [userDetails, setUserDetails] = useState(null);
+
+
+
+    useEffect(() => {
+        async function fetchUserDetails() {
+            try {
+                const userData = await fetchUserProfile("test");
+                setUserDetails(userData);
+                console.log(userData);
+            } catch (error) {
+                console.error(error);
+            }
+        }
+
+        fetchUserDetails();
+    }, []);
+
+    if (!userDetails) {
+        return <div className='profileDescription'>Loading...</div>;
+    }
+
+    const {
+        name,
+        jobRole,
+        department,
+        jobExpectations,
+        goals,
+        skills,
+        priorExp,
+        uid
+    } = userDetails;
+    
+        // Now you can use the user details here
+    
+
     return (
         <div className='profileMainContainer'>
 
@@ -16,22 +53,21 @@ export function Profile() {
             </header>
             <div className='profileContentContainer'>
                 <h3 className='profileHeading'>Name</h3>
-                <p className='profileDescription'>Joey Lee</p>
+                <p className='profileDescription'>{name}</p>
 
+                <h3 className='profileHeading'>Role</h3>
+                <p className='profileDescription'>{jobRole}</p>
                 <h3 className='profileHeading'>Current Department</h3>
-                <p className='profileDescription'>Unemployed</p>
+                <p className='profileDescription'>{department}</p>
 
-                <h3 className='profileHeading'>Job Expectation</h3>
-                <p className='profileDescription'>gud food</p>
+                <h3 className='profileHeading'>Skills</h3>
+                <p className='profileDescription'>{skills}</p>
+                
+                <h3 className='profileHeading'>Projects</h3>
+                <p className='profileDescription'>projects A</p>
 
-                <h3 className='profileHeading'>Goals</h3>
-                <p className='profileDescription'>be a hella good programmer</p>
-
-                <h3 className='profileHeading'>Skills Per Project</h3>
-                <p className='profileDescription'>a lot</p>
-
-                <h3 className='profileHeading'>Prior Experiences and Skills</h3>
-                <p className='profileDescription'>lol none</p>
+                <h3 className='profileHeading'>Prior Experiences</h3>
+                <p className='profileDescription'>{priorExp}</p>
 
             </div>
 
@@ -40,4 +76,5 @@ export function Profile() {
 
         </div>        
     )
+    
 }

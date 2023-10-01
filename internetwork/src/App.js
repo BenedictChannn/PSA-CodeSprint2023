@@ -5,6 +5,7 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './pages/Home/Home';
 import { Profile } from './pages/Profile/Profile';
+import EditProfile from './pages/EditProfile/EditProfile';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="home" element={<Home />} />
         <Route path="login" element={<Login />} />
         <Route path="profile" element={<Profile />}/>
+        <Route path="edit-profile" element={<EditProfile/>}/>
       </Routes>
     </BrowserRouter>
   );
