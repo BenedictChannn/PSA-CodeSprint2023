@@ -20,11 +20,14 @@ function Home({ userRole }) {
       </div>
 
       <div className='homeiconcont'>
-        <div className='iconhome'>
-          <img className='imagehome' src='../../../assets/images/profile.png' alt='' />
-          <h1 className='homeheader2'>Personal Profile</h1>
-          <p className='hometext'>View and Edit your personal professional profile</p>
-        </div>
+        <Link to="/profile" className='link-no-underline'>
+          <div className='iconhome'>
+            <img className='imagehome' src='../../../assets/images/profile.png' alt='' />
+            <h1 className='homeheader2'>Personal Profile</h1>
+            <p className='hometext'>View and Edit your personal professional profile</p>
+          </div>
+        </Link>
+
 
         <div className='iconhome'>
           <img className='imagehome' src='../../../assets/images/upskill.png' alt='' />
@@ -32,14 +35,13 @@ function Home({ userRole }) {
           <p className='hometext'>Boost your skills and knowledge with PSA Institute.</p>
         </div>
 
-        {/* Conditional rendering for HR Official */}
-        {isHROfficial && (
-          <div className='iconhome'>
-            <img className='imagehome' src='../../../assets/images/find.png' alt='' />
-            <h1 className='homeheader2'>Find Workers</h1>
-            <p className='hometext'>Find workers to suit your needs.</p>
-          </div>
-        )}
+          <Link to="/findworkers" className='link-no-underline'>
+            <div className='iconhome'>
+              <img className='imagehome' src='../../../assets/images/find.png' alt='' />
+              <h1 className='homeheader2'>Review Employees</h1>
+              <p className='hometext'>Rate and give feedback to your fellow employees.</p>
+            </div>
+          </Link>
       </div>
 
       <div className='homebuttoncont'>
