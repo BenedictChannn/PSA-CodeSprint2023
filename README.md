@@ -30,6 +30,11 @@ The ML-powered solution aims to revolutionize the way employee transfers are man
 
 - **Employee Portal:** A user-friendly employee portal to visualise essential Human Resource (HR) information within the company
 
+## To use all the features
+Log in with:
+  Email: danielb@gmail.com
+  Password: password
+
 ## Getting Started
 
 To get started with this solution, follow these steps:
