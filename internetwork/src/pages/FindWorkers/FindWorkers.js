@@ -1,10 +1,11 @@
 import React from 'react'
 import { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import './FindWorkers.css';
 import InputBox from '../../components/InputBox'
 import Sidebar from '../../components/Sidebar/Sidebar';
 import { sendFindRequest } from '../../data/firebase';
+import { call } from '../../data/call';
 
 
 
@@ -15,13 +16,12 @@ function FindWorkers() {
     const [name, setName] = useState('')
     const [skill, setSkill] = useState('')
     const navigate = useNavigate()
+    const [searchParams, setSearchParams] = useSearchParams()
 
 
 
-    const handleFind = (e) => {
-        sendFindRequest(name)
-        navigate('/findworkersresults')
-    }
+
+
 
     return (
         <div className='findcontainer'>
@@ -74,11 +74,14 @@ function FindWorkers() {
                 <div>
                     <InputBox placeholder="SKILLS" value={skill} setValue={setSkill} />
                 </div>
-                <div className='findbuttcont'>
-                    <button className='findButton' onClick={handleFind}>
-                        FIND
-                    </button>
-                </div>
+                <Link to={`/findworkersresults/${name}`}>
+                    <div className='findbuttcont'>
+                        <button className='findButton'>
+                            FIND
+                        </button>
+                    </div>
+                </Link>
+                
             </div>
         </div>
     )
