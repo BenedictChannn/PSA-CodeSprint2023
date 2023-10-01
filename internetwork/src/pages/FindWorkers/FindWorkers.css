@@ -37,7 +37,7 @@
     width: 650px;
     height: 650px;
     padding-top: 7%;
-    margin-left: 10%;
+    margin-left: 14%;
 }
 
 .findimage img {
@@ -99,11 +99,11 @@
   }
 
   .findButton {
-    font-family: 'Garet-Book', sans-serif;
+    font-family: 'Garet-Heavy', sans-serif;
     font-weight: bold;
     text-align: center;
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: yellow;
     border-color: yellow;
     border-width: 3px;
     font-size: 100%; /* Adjust the font size as needed */

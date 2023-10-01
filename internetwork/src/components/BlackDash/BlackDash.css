@@ -1,3 +1,4 @@
+/* styles.css or App.css */
 @font-face {
     font-family: 'Garet-Book';
     src: url('../../assets/fonts/garet-cufonfonts/Garet-Book.otf') format('opentype');
@@ -22,67 +23,27 @@
     font-style: normal;
 }
 
-.dashheader {
-    font-family: 'PPTelegraf-UltraLight', sans-serif;
-    text-align: center;
-    color: white;
-    font-size: 100%;
-}
-
-.dashcontent {
-    text-align: center;
-    justify-content: flex-start;
-    margin-top: 0; /* Remove the margin from the top */
-    padding-top: 20px; /* Add padding from the top to create space */
-    margin-left: 15%;
-    margin-right: 15%;
-}
-
-
-.blackbox {
-    display: flex;
-    justify-content: flex-start; /* Align items to the start of the container */
-    width: 100%; /* Set the width to 100% to fill the container horizontally */
-}
-
-.projectons {
+.blackcontainer {
     background-color: black;
     color: white;
     border: 4px solid yellow; /* Add border with 2px width and yellow color */
     display: flex;
-    align-items: flex-start; /* Vertically center content */
+    align-items: center; /* Vertically center content */
     justify-content: center; /* Horizontally center content */
+    margin-bottom: 5%;
+    margin-right: 20.5%;
     flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 20px;
     white-space: nowrap;
+
 }
 
-.projectons h1 {
-    width: 60%
-}
 
-.projtext {
+.conttext {
     font-family: 'Garet-Book', sans-serif;
     text-align: center;
     color: white;
     font-size: medium;
 
-}
-
-.yprojtext {
-    font-family: 'Garet-Book', sans-serif;
-    text-align: center;
-    color: yellow;
-    font-size: medium;
-
-}
-
-.bottom {
-    display: flex;
-    justify-content: flex-start; /* Align items from left to right */
-    align-items: center; /* Vertically center content */
-}
-
-.chart {
-    height: 85%;
-    width: 85%;
 }

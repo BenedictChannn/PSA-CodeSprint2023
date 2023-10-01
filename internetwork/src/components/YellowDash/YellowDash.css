@@ -1,0 +1,47 @@
+/* styles.css or App.css */
+@font-face {
+    font-family: 'Garet-Book';
+    src: url('../../assets/fonts/garet-cufonfonts/Garet-Book.otf') format('opentype');
+    /* Add more src lines for different font file formats if necessary */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PPTelegraf-Regular';
+    src: url('../../assets/fonts/PPTelegraf-Free/PPTelegraf-Regular.otf') format('opentype');
+    /* Add more src lines for different font file formats if necessary */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PPTelegraf-UltraLight';
+    src: url('../../assets/fonts/PPTelegraf-Free/PPTelegraf-UltraLight.otf') format('opentype');
+    /* Add more src lines for different font file formats if necessary */
+    font-weight: normal;
+    font-style: normal;
+}
+
+.ycontainer {
+    background-color: yellow;
+    color: black;
+    border-color: yellow;
+    display: flex;
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+    margin-bottom: 5%;
+    margin-right: 7%;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 20px;
+    white-space: nowrap;
+    
+}
+
+.bconttext {
+    font-family: 'Garet-Book', sans-serif;
+    text-align: center;
+    color: black;
+    font-size: medium;
+}

@@ -9,7 +9,7 @@ function Sidebar({ page }) {
                 <Link to="/dashboard" className='link'>
                     <div className='dashicon'>
                         {page == "dash"
-                            ? <img src='../../../assets/images/dashboard.png' alt='' />
+                            ? <img src='../../../assets/images/dashboardp.png' alt='' />
                             : <img src='../../../assets/images/dashboardb.png' alt='' />
                         }
                     </div>
@@ -19,7 +19,7 @@ function Sidebar({ page }) {
                 <Link to="/findworkers" className='link'>
                     <div className='dashicon'>
                         {page == "search"
-                            ? <img src='../../../assets/images/search.png' alt='' />
+                            ? <img src='../../../assets/images/searchp.png' alt='' />
                             : <img src='../../../assets/images/searchb.png' alt='' />
                         }
                     </div>
@@ -29,7 +29,7 @@ function Sidebar({ page }) {
                 <Link to="/profile" className='link'>
                     <div className='dashicon'>
                         {page == "user"
-                            ? <img src='../../../assets/images/user.png' alt='' />
+                            ? <img src='../../../assets/images/userp.png' alt='' />
                             : <img src='../../../assets/images/userb.png' alt='' />
                         }
                     </div>
@@ -38,7 +38,7 @@ function Sidebar({ page }) {
             <div>
                 <div className='dashicon'>
                     {page == "feedback"
-                        ? <img src='../../../assets/images/feedback.png' alt='' />
+                        ? <img src='../../../assets/images/feedbackp.png' alt='' />
                         : <img src='../../../assets/images/feedbackb.png' alt='' />
                     }
                 </div>
