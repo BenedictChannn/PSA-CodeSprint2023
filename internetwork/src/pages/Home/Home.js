@@ -35,7 +35,7 @@ function Home({ userRole }) {
           <p className='hometext'>Boost your skills and knowledge with PSA Institute.</p>
         </div>
 
-          <Link to="/findworkers" className='link-no-underline'>
+          <Link to="/feedbacknonhr" className='link-no-underline'>
             <div className='iconhome'>
               <img className='imagehome' src='../../../assets/images/find.png' alt='' />
               <h1 className='homeheader2'>Review Employees</h1>

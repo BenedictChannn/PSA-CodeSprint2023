@@ -26,7 +26,7 @@ function Sidebar({ page }) {
                 </Link>
             </div>
             <div>
-                <Link to="/profile" className='link'>
+                <Link to="/profilehr" className='link'>
                     <div className='dashicon'>
                         {page == "user"
                             ? <img src='../../../assets/images/userp.png' alt='' />
@@ -36,12 +36,15 @@ function Sidebar({ page }) {
                 </Link>
             </div>
             <div>
-                <div className='dashicon'>
-                    {page == "feedback"
-                        ? <img src='../../../assets/images/feedbackp.png' alt='' />
-                        : <img src='../../../assets/images/feedbackb.png' alt='' />
-                    }
-                </div>
+                <Link to="/feedback" className='link'>
+                    <div className='dashicon'>
+                        {page == "feedback"
+                            ? <img src='../../../assets/images/feedbackp.png' alt='' />
+                            : <img src='../../../assets/images/feedbackb.png' alt='' />
+                        }
+                    </div>
+                </Link>
+
             </div>
             <div>
                 <Link to="/" className='link'>

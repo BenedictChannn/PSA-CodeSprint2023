@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'Garet-Book';
+    src: url('../../assets/fonts/garet-cufonfonts/Garet-Book.otf') format('opentype');
+    /* Add more src lines for different font file formats if necessary */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PPTelegraf-Regular';
+    src: url('../../assets/fonts/PPTelegraf-Free/PPTelegraf-Regular.otf') format('opentype');
+    /* Add more src lines for different font file formats if necessary */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PPTelegraf-UltraLight';
+    src: url('../../assets/fonts/PPTelegraf-Free/PPTelegraf-UltraLight.otf') format('opentype');
+    /* Add more src lines for different font file formats if necessary */
+    font-weight: normal;
+    font-style: normal;
+}
+
+.homebutton {
+    height: 30px;
+    width: 30px;
+    margin: 30px;
+}
+
+.homebutton img {
+    width: 100%;
+    height: 100%;
+}
+
+.findimage {
+    width: 650px;
+    height: 650px;
+    padding-top: 7%;
+    margin-left: 14%;
+}
+
+.findimage img {
+    width: 100%;
+    height: 100%;
+}
+
+.logof {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logof img {
+    width: 30%;
+}
+
+.findcontainer {
+    display: flex;
+    /* Use flexbox */
+    justify-content: space-between;
+    /* Distribute items evenly */
+}
+
+.findheader {
+    font-family: 'PPTelegraf-UltraLight', sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 100%;
+    /* Adjusted font size with 'px' unit */
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.inputf {
+    height: 65px;
+    width: 425px;
+    border-width: 2.5px;
+    border-color: yellow;
+    background-color: black;
+    font-family: 'Garet-Book', sans-serif;
+    margin: 15px 10px;
+    color: yellow;
+    padding: 10px;
+    text-align: center;
+    font-size: large;
+}
+
+.inputf::placeholder {
+    color: yellow;
+}
+
+.last {
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Align children vertically */
+    align-items: center; /* Center children horizontally */
+    text-align: center; /* Center text horizontally */
+    gap: 10px; /* Add some spacing between children, adjust as needed */
+  }
+
+  .findButton {
+    font-family: 'Garet-Heavy', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    background-color: yellow;
+    border-color: yellow;
+    border-width: 3px;
+    font-size: 100%; /* Adjust the font size as needed */
+    padding: 8px 65px; /* Adjust the padding values as needed (top and bottom, left and right) */
+}
+
+.findbuttcont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+}

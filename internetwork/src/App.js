@@ -9,6 +9,9 @@ import FindWorkers from './pages/FindWorkers/FindWorkers';
 import FindWorkersResults from './pages/FindWorkersResults/FindWorkersResults';
 import Dashboard from './pages/Dashboard/Dashboard';
 import EditProfile from './pages/EditProfile/EditProfile';
+import Feedback from './pages/Feedback/Feedback';
+import Feedbacknonhr from './pages/Feedbacknonhr/Feedbacknonhr';
+import { Profilehr } from './pages/Profilehr/Profilehr';
 
 
 function App() {
@@ -23,6 +26,10 @@ function App() {
         <Route path="findworkersresults" element={<FindWorkersResults />}/>
         <Route path="dashboard" element={<Dashboard />}/>
         <Route path="edit-profile" element={<EditProfile/>}/>
+        <Route path="feedback" element={<Feedback/>}/>
+        <Route path="feedbacknonhr" element={<Feedbacknonhr/>}/>
+        <Route path="profilehr" element={<Profilehr />}/>
+
       </Routes>
     </BrowserRouter>
   );
